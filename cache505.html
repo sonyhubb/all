@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html manifest="505.manifest">
+<head>
+<title>مركز خالد للحاسب الآلي | أدوات PS4 و GoldHEN</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="جارٍ تثبيت التخزين المؤقت دون اتصال: " + Percent + "%";}
+function DisplayCacheProgress(){window.msgs.innerHTML="تم تثبيت التخزين المؤقت بنجاح ✔";setTimeout(function(){window.msgs.innerHTML="أغلق المتصفح ثم أعد فتحه للمتابعة...";},1500);}
+window.applicationCache.addEventListener("progress",DLProgress,false);
+window.applicationCache.oncached=function(e){DisplayCacheProgress();};
+window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+window.applicationCache.onerror=function(e){window.msgs.innerHTML="فشل تثبيت الكاش. تحقق من رفع جميع الملفات ومن إعدادات الخادم ثم امسح كاش المتصفح وأعد المحاولة.";};
+</script>
+<h1>مركز خالد للحاسب الآلي</h1>
+<hr>
+<br>
+<h1 id=msgs style="font-size: 30px;margin-top: 77px;margin-bottom: 455px;">جارٍ بدء تثبيت التخزين المؤقت...</h1>
+<a class="contact" href="tel:0788508809">للتواصل: 0788508809</a><p class="small-note">مركز خالد للحاسب الآلي — خطوات التشغيل: افتح الصفحة من متصفح جهاز PS4، انتظر اكتمال تحميل GoldHEN، ولا تغلق المتصفح أثناء تنفيذ العملية. عند ظهور رسالة نجاح تفعيل GoldHEN، اضغط زر PS للعودة إلى القائمة الرئيسية.</p>
+</body>
+</html>
